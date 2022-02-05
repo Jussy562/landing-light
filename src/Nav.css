@@ -1,0 +1,215 @@
+.myNav {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    width: 100%;
+}
+.nav-div {
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+
+.nav-list-div {
+    display: flex !important;
+    justify-content: flex-end !important;
+    margin-right: 2rem !important;
+}
+.nav-list {
+    color: rgb(83, 83, 83) !important;
+    font-weight: 700 !important;
+}
+
+.nav-list:hover {
+    color: black !important;
+    font-weight: 700 !important;
+}
+
+
+.profile-image{
+    max-width: 50px !important;
+}
+
+.profile-image-div{
+    background: turquoise !important;
+}
+.payment-info-title {
+    color: black !important;
+    font-weight: 700 !important;
+    font-size: 1.19rem !important;
+}
+
+.payment-text {
+    color: rgb(134, 134, 134) !important;
+    font-size: 0.84rem !important;
+    font-weight: 500 !important;
+}
+
+.payment-icons-div{
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+
+.pay-icon {
+    max-width: 4rem !important;
+}
+
+.dot {
+    width: 0.8rem !important;
+    height: 0.8rem !important;
+    color: rgb(14, 8, 8) !important;
+}
+
+.paytype {
+    display: flex !important;
+    flex-direction: row !important;
+    width: auto !important;
+}
+.card-info {
+    background-image: linear-gradient(to right, rgba(175, 101, 66, 0.952) , rgb(88, 39, 204));
+    width: 60% !important;
+    height: 15rem !important;
+    color: white!important;
+    display: flex !important;
+    flex-direction: row !important;
+}
+.chipz {
+    font-size: 4rem !important;
+}
+
+.m-icon {
+    max-width: 70px !important;
+}
+
+.master-icon-div {
+    display: flex !important;
+    align-items: flex-end !important;
+    margin: 0 !important;
+}
+
+.payment-session {
+    height: auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.payment-heading {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction:   row !important;
+    justify-content: space-between !important;
+}
+
+.payment {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.formRow {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.formCheck {
+    display: flex !important;
+    flex-direction: column !important;
+
+}
+
+.form-check-input {
+    background-color: #ffffff !important;
+    border: 5px solid #4285f4 !important;
+}
+
+.form-control {
+    background: whitesmoke !important;
+    color: black !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+}
+.form-label {
+    color: black !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+}
+
+.add-btn {
+    width: 100% !important;
+    background: rgb(0, 110, 255) !important;
+    border: none !important;
+}
+.cost-row {
+    display: flex !important;
+    flex-direction: row;
+}
+.cost-title{
+    font-size: 0.95rem !important;
+    color: black !important;
+    font-weight: 700 !important;
+}
+.proCode {
+    color: rgb(196, 196, 196);
+}
+
+.payNow {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.submit-btn {
+    width: 10rem !important;
+    background: rgb(0, 110, 255) !important;
+    border: none !important;
+}
+.total {
+    font-size: 1rem !important;
+    color: black !important;
+    font-weight: 800 !important;
+}
+.total-div {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+}
+
+.back-card-info {
+    display: flex !important;
+    flex-direction: column !important;
+    background: rgba(109, 58, 101, 0.952) !important;
+    width: 60% !important;
+    height: 15rem;
+    color: white!important;
+}
+
+.bar-div {
+    width: 100% !important;
+    height: 2rem !important;
+    background: black !important;
+}
+
+.code-session {
+    display: flex !important;
+    width: 100% !important;
+    
+}
+
+.security-div {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100%  !important;
+    height: 2rem !important;
+}
+
+.blank {
+    background: rgb(214, 214, 214) !important;
+}
+.code {
+    background: white !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: black !important;
+}
+/* .card-container{
+    display: flex !important;
+    justify-content: start !important;
+} */
