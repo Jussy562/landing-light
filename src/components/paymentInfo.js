@@ -54,6 +54,7 @@ function PaymentInfo() {
                         </div>
 
                         <div classsName='paytype d-flex'>
+                            <div className='dot'>
                             {
                                 payType === "discover" ? 
                                 <div className='dot'>
@@ -61,6 +62,7 @@ function PaymentInfo() {
                                 </div>
                                 : " "
                             }
+                            </div>
                             <img src="./images/discov.png" href="/" alt="discover" className='pay-icon me-4'
                             onClick={() => setPayType("discover")}
                             />
