@@ -10,8 +10,8 @@
 }
 
 .nav-listDiv {
-    /* display: flex !important;
-    justify-content: flex-end !important; */
+    display: flex !important;
+    justify-content: flex-end !important;
     margin-right: 2rem !important;
 }
 .nav-list {
@@ -140,6 +140,12 @@
     }
     .master-card {
         margin-top: 0.99rem !important;
+    }
+
+    .nav-listDiv {
+        display: flex !important;
+        justify-content: flex-end !important;
+        margin-right: 2rem !important;
     }
 }
 
