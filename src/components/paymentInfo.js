@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { usePaymentInputs } from 'react-payment-inputs';
 import { FcSimCardChip } from 'react-icons/fc';
-import { MdContactless } from 'react-icons/md';
+
 // import { Form, Button, Row } from 'react-bootstrap';
 
 function PaymentInfo() {
@@ -116,7 +116,7 @@ function PaymentInfo() {
                                 <div className='chip-icon p-0 '>
                                         <img src = "./images/payicon.svg" alt="paywave" className="paywave" />
                                         <FcSimCardChip className='chipz'/>
-                                        {/* <MdContactless className='wave'/> */}
+                                        
                                 </div>
                                 <div className='card-date ms-3'>
                                     <p className='card-exp-date m-0 p-0'>EXPIRATION DATE</p>
