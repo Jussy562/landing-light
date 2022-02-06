@@ -5,10 +5,10 @@ function NavBar() {
   return (
 
     <Navbar bg="none" expand="lg" className='nav-div mb-5'>
-    
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className='m2'/>
         <div className='myNav'>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav me-0" className='nav-list-div'>
+            
+            <Navbar.Collapse id="basic-navbar-nav me-0" className='nav-listDiv'>
                 <Nav className="me-3">
                     <Nav.Link className='nav-list' href="/">TRIPS</Nav.Link>
                     <Nav.Link className='nav-list' href="/">RECENTLY VIEWED</Nav.Link>

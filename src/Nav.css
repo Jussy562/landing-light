@@ -2,16 +2,16 @@
     display: flex !important;
     flex-direction: row !important;
     justify-content: flex-end !important;
-    width: 100%;
 }
 .nav-div {
+    width: 100% !important;
     display: flex !important;
-    justify-content: flex-end !important;
+    justify-content: space-between !important;
 }
 
-.nav-list-div {
-    display: flex !important;
-    justify-content: flex-end !important;
+.nav-listDiv {
+    /* display: flex !important;
+    justify-content: flex-end !important; */
     margin-right: 2rem !important;
 }
 .nav-list {
@@ -32,6 +32,8 @@
 .profile-image-div{
     background: turquoise !important;
 }
+
+
 .payment-info-title {
     color: black !important;
     font-weight: 700 !important;
@@ -47,6 +49,8 @@
 .payment-icons-div{
     display: flex !important;
     justify-content: flex-end !important;
+    align-items: center !important;
+    height: 4rem !important;
 }
 
 .pay-icon {
@@ -54,15 +58,26 @@
 }
 
 .dot {
-    width: 0.8rem !important;
-    height: 0.8rem !important;
-    color: rgb(14, 8, 8) !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 0.5rem !important;
+    height: 0.5rem !important;
+    /* background: rgb(14, 8, 8) !important; */
+    
+}
+
+.dot-blank {
+    width: 100% !important;
+    background: rgb(201, 201, 201) !important;
+    width: 0.5rem !important;
+    height: 0.5rem !important;
 }
 
 .paytype {
     display: flex !important;
     flex-direction: row !important;
     width: auto !important;
+    align-items: center !important;
 }
 .card-info {
     background-image: linear-gradient(to right, rgba(175, 101, 66, 0.952) , rgb(88, 39, 204));
@@ -102,6 +117,30 @@
 .payment {
     display: flex !important;
     justify-content: space-between !important;
+} 
+@media only screen and (max-width:992px) {
+    .payment {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+    } 
+
+    .payment-heading {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction:   column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .payment-icons-div{
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        height: 4rem !important;
+    }
+    .master-card {
+        margin-top: 0.99rem !important;
+    }
 }
 
 .formRow {

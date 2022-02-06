@@ -20,6 +20,19 @@ function PaymentInfo() {
     });
     const [isBack, setIsBack] = useState("front");
     const [payType, setPayType] = useState("paypal");
+    const paypal = (e) => {
+        e.preventDefault();
+        setPayType("paypal");
+    }
+    const visa = (e) => {
+        e.preventDefault();
+        setPayType("visa");
+    }
+
+    const discover = (e) => {
+        e.preventDefault();
+        setPayType("discover");
+    }
     const handleEvent = (e) => {
         e.preventDefault();
         setIsBack("back");
@@ -29,10 +42,10 @@ function PaymentInfo() {
         setIsBack("front")
     }
   return (
-    <div className="m-0 py-4 payment-session">
+    <div className="col-12 m-0 py-4 payment-session">
       
         {/* <div className=' p-0 m-0'> */}
-            <div className=' mb-3 payment-heading'>
+            <div className=' mb-2 mb-lg-3 payment-heading'>
                 <div className='col-12 col-md-6 p-0 text-start'>
                     <h5 className='payment-info-title p-0 m-0'>Payment Information</h5>
                     <p className='p-0 m-0 payment-text'>Choose your method of payment</p>
@@ -40,43 +53,43 @@ function PaymentInfo() {
 
                 <div className='col-12 col-md-6 p-0 text-center payment-icons-div'>
                     <div className='d-flex payment-icons '>
-                        <div classsName='paytype d-flex'>
+                        <div className='paytype d-flex'>
                             {
                                 payType === "visa" ? 
-                                <div className='dot rounded-circle me-2'>
-                                    <div></div>
+                                <div className='dot col-2 me-2'>
+                                    <div className='dot-blank rounded-circle'></div>
                                 </div>
                                 : " "
                             }
-                            <img src="./images/visa.png" href="/" alt="visa" className='pay-icon me-4'
-                            onClick={() => setPayType("visa")}
+                            <img src="./images/visa.png" href="/" alt="visa" className='col-10 pay-icon me-1'
+                            onClick={(e) => visa(e)}
                             />
                         </div>
 
-                        <div classsName='paytype d-flex'>
-                            <div className='dot'>
+                        <div className='paytype d-flex'>
+                            
                             {
                                 payType === "discover" ? 
-                                <div className='dot'>
-                                    <div></div>
+                                <div className='dot col-2 me-2'>
+                                    <div className='dot-blank rounded-circle'></div>
                                 </div>
                                 : " "
                             }
-                            </div>
-                            <img src="./images/discov.png" href="/" alt="discover" className='pay-icon me-4'
-                            onClick={() => setPayType("discover")}
+                         
+                            <img src="./images/discov.png" href="/" alt="discover" className='col-10 pay-icon me-1'
+                            onClick={(e) => discover(e)}
                             />
                         </div>
-                        <div classsName='paytype d-flex'>
+                        <div className='paytype d-flex'>
                             {
                                 payType === "paypal" ? 
-                                <div className='dot col-3'>
-                                    <div></div>
+                                <div className='dot col-2 me-2'>
+                                    <div className='dot-blank rounded-circle'></div>
                                 </div>
                                 : " "
                             }
-                           <img src="./images/paypal.png" href="/" alt='paypal'className='pay-icon me-4 col-9'
-                            onClick={() => setPayType("paypal")}
+                           <img src="./images/paypal.png" href="/" alt='paypal'className='col-10 pay-icon me-4 col-9'
+                            onClick={(e)=>paypal(e)}
                             />
                         </div>
                         
@@ -89,7 +102,7 @@ function PaymentInfo() {
                 </div>
             </div>
             <div className='   payment'>
-              <div className='col-12 col-md-6 p-0 card-container m-0  '>
+              <div className='col-12 col-sm-12 col-md-6 p-0 card-container m-0  '>
                     {
                         isBack === "front" ?
                         <div className='card-info p-3 '>
@@ -140,8 +153,8 @@ function PaymentInfo() {
                     
                  
                 </div>
-                <div className='col-12 col-md-6 master-card p-0 m-0'>
-                        <form action='' className='p-o text-start'>
+                <div className=' col-12 col-md-6 master-card p-0 m-0'>
+                        <form action='' className='p-o text-start '>
                             <div className='row formRow mb-3 p-0'>
                                 <div className='col-6 '>
                                     <label for="cardNumber" class="form-label">Credit card number</label>
