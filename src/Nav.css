@@ -6,12 +6,12 @@
 .nav-div {
     width: 100% !important;
     display: flex !important;
-    justify-content: space-between !important;
+    justify-content: flex-end !important;
 }
 
 .nav-listDiv {
-    display: flex !important;
-    justify-content: flex-end !important;
+    /* display: flex !important;
+    justify-content: flex-end !important; */
     margin-right: 2rem !important;
 }
 .nav-list {
@@ -81,7 +81,7 @@
 }
 .card-info {
     background-image: linear-gradient(to right, rgba(175, 101, 66, 0.952) , rgb(88, 39, 204));
-    width: 60% !important;
+    width: 65% !important;
     height: 15rem !important;
     color: white!important;
     display: flex !important;
@@ -118,36 +118,11 @@
     display: flex !important;
     justify-content: space-between !important;
 } 
-@media only screen and (max-width:992px) {
-    .payment {
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: space-between !important;
-    } 
-
-    .payment-heading {
-        width: 100% !important;
-        display: flex !important;
-        flex-direction:   column !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-    .payment-icons-div{
-        display: flex !important;
-        justify-content: flex-start !important;
-        align-items: center !important;
-        height: 4rem !important;
-    }
-    .master-card {
-        margin-top: 0.99rem !important;
-    }
-
-    .nav-listDiv {
-        display: flex !important;
-        justify-content: flex-end !important;
-        margin-right: 2rem !important;
-    }
+.paywave {
+    max-width: 0.9rem !important;
+    font-size: 4rem !important;
 }
+
 
 .formRow {
     display: flex !important;
@@ -220,7 +195,7 @@
     display: flex !important;
     flex-direction: column !important;
     background: rgba(109, 58, 101, 0.952) !important;
-    width: 60% !important;
+    width: 65% !important;
     height: 15rem;
     color: white!important;
 }
@@ -254,6 +229,128 @@
     align-items: center !important;
     color: black !important;
 }
+
+@media only screen and (max-width: 1200px) {
+    .card-info {
+        width: 80% !important;
+        /* justify-self: center !important; */
+    }
+
+    .back-card-info {
+        width: 80% !important;
+        /* justify-self: center !important; */
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .payment {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    } 
+
+    .payment-heading {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction:   row !important;
+        justify-content: start !important;
+        align-items: center !important;
+    }
+    .payment-icons-div{
+        display: flex !important;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        height: 4rem !important;
+    }
+    .master-card {
+        margin-top: 0.99rem !important;
+    }
+
+    .nav-listDiv {
+        /* display: flex !important;
+        justify-content: flex-end !important; */
+        margin-right: 2rem !important;
+    }
+
+    .profile-image{
+        max-width: 50px !important;
+    }
+
+    .profile-image-div{
+        background: turquoise !important;
+        max-width: 50px !important;
+    }
+
+    .nav-div {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        
+    }
+
+    .menu {
+        text-align: start !important;
+    }
+
+    .nav-listDiv {
+        text-align: start !important;
+    }
+    .myNav {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        justify-content: flex-end !important;
+    }
+    .card-info {
+        width: 85% !important;
+        /* justify-self: center !important; */
+    }
+
+    .back-card-info {
+        width: 85% !important;
+        /* justify-self: center !important; */
+    }
+
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .card-info {
+        width: 85% !important;
+        /* justify-self: center !important; */
+    }
+
+    .back-card-info {
+        width: 85% !important;
+        /* justify-self: center !important; */
+    }
+
+    .card-container {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .payment {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+    } 
+
+    .payment-heading {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction:   column !important;
+        justify-content: start !important;
+        align-items: center !important;
+    }
+    .payment-icons-div{
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        height: 4rem !important;
+    }
+}
+
+
 /* .card-container{
     display: flex !important;
     justify-content: start !important;

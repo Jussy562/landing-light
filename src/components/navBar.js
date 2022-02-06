@@ -9,7 +9,7 @@ function NavBar() {
         <div className='myNav'>
             
             <Navbar.Collapse id="basic-navbar-nav me-0" className='nav-listDiv'>
-                <Nav className="me-3">
+                <Nav className="me-3 menu">
                     <Nav.Link className='nav-list' href="/">TRIPS</Nav.Link>
                     <Nav.Link className='nav-list' href="/">RECENTLY VIEWED</Nav.Link>
                     <Nav.Link className='nav-list' href="/">BOOKINGS</Nav.Link>

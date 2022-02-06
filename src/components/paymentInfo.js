@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { usePaymentInputs } from 'react-payment-inputs';
 import { FcSimCardChip } from 'react-icons/fc';
+import { MdContactless } from 'react-icons/md';
 // import { Form, Button, Row } from 'react-bootstrap';
 
 function PaymentInfo() {
@@ -102,24 +103,26 @@ function PaymentInfo() {
                 </div>
             </div>
             <div className='   payment'>
-              <div className='col-12 col-sm-12 col-md-6 p-0 card-container m-0  '>
+              <div className='col-12 col-md-6 p-0 card-container m-0  '>
                     {
                         isBack === "front" ?
-                        <div className='card-info p-3 '>
+                        <div className='card-info p-2 '>
                             <div className='col-8 p-0 text-start'>
-                                <div className='card-number'>
+                                <div className='card-number ms-3'>
                                     <p className='m-0 p-0'>CARD NUMBER</p>
                                     <p className='m-0 p-0'>{cardDetails.cardNumber}</p>
                                 </div>
 
                                 <div className='chip-icon p-0 '>
+                                        <img src = "./images/payicon.svg" alt="paywave" className="paywave" />
                                         <FcSimCardChip className='chipz'/>
+                                        {/* <MdContactless className='wave'/> */}
                                 </div>
-                                <div className='card-date'>
+                                <div className='card-date ms-3'>
                                     <p className='card-exp-date m-0 p-0'>EXPIRATION DATE</p>
                                     <p className='date p-0'>{cardDetails.expirationDate}</p>
                                 </div>
-                                <div className='card-holder'>
+                                <div className='card-holder ms-3'>
                                     <p className='name'>{cardDetails.cardHolder}</p>
                                 </div>
                             </div>
@@ -160,7 +163,7 @@ function PaymentInfo() {
                                     <label for="cardNumber" class="form-label">Credit card number</label>
                                     <input type="tel" class="form-control" id="cardNumber" 
                                     value={cardDetails.cardNumber} placeholder="0000 0000 0000 0000"
-                                    inputMode='numeric' pattern="(\d{4}\s?){4}"  autoComplete='cc-number' maxLength="19"
+                                    inputMode='numeric' pattern="[a-zA-Z0-9_-]{13,19}"  autoComplete='cc-number' maxLength="19"
                                     {...getCardNumberProps()}
                                     onChange={(event) => setCardDetails({ ...cardDetails, cardNumber: event.target.value })}
                                     />
